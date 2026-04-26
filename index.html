@@ -16,7 +16,6 @@
             color: #333;
             background-color: #f9f9f9;
         }
-        /* Header & Logo */
         header {
             background-color: #ffffff;
             padding: 20px 0;
@@ -27,7 +26,6 @@
             width: 160px;
             height: auto;
         }
-        /* Navigation */
         nav {
             background-color: #2E7D32;
             padding: 12px 0;
@@ -38,18 +36,15 @@
             text-decoration: none;
             margin: 0 20px;
             font-size: 16px;
-            transition: color 0.3s;
         }
         nav a:hover {
             color: #c8e6c9;
         }
-        /* Sections */
         section {
             max-width: 1100px;
             margin: 40px auto;
-            padding: 0 20px;
-            background: white;
             padding: 35px;
+            background: white;
             border-radius: 8px;
             box-shadow: 0 3px 8px rgba(0,0,0,0.08);
         }
@@ -60,19 +55,31 @@
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 10px;
         }
+        h3 {
+            color: #388E3C;
+            margin: 25px 0 10px 0;
+            font-size: 20px;
+        }
         p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             font-size: 16px;
         }
-        /* Images */
-        .section-image {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 25px auto;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        ul {
+            margin: 10px 0 20px 25px;
+        }
+        .specs-box {
+            background-color: #f0f8f0;
+            border-left: 5px solid #4CAF50;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .pitch {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2E7D32;
+            text-align: center;
+            margin: 25px 0;
         }
         .image-gallery {
             display: flex;
@@ -88,7 +95,23 @@
             border-radius: 6px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        /* Footer */
+        .tech-button {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .tech-button a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .tech-button a:hover {
+            background-color: #388E3C;
+        }
         footer {
             background-color: #2E7D32;
             color: white;
@@ -100,27 +123,20 @@
 </head>
 <body>
 
-    <!-- Header with Logo -->
     <header>
         <img src="Logo.png" alt="Green Energy Design Logo" class="logo">
     </header>
 
-    <!-- Navigation Menu -->
     <nav>
         <a href="#wind-turbine">Wind Turbine</a>
-        <a href="#aeterna-fabric">Aeterna Fabric</a>
+        <a href="#eternal-concrete">Eternal-concrete</a>
         <a href="#droplet-energy">Droplet Energy</a>
     </nav>
 
-    <!-- Wind Turbine Section -->
     <section id="wind-turbine">
         <h2>Wind Turbine Innovation</h2>
-        <p>
-            Discover our cutting-edge wind energy solutions designed for maximum efficiency and sustainability. 
-            Our turbine technology represents the next generation of renewable power generation.
-        </p>
+        <p>Discover our cutting-edge wind energy solutions designed for maximum efficiency and sustainability. Our turbine technology represents the next generation of renewable power generation.</p>
         
-        <!-- All 3 Wind Turbine Images -->
         <div class="image-gallery">
             <img src="boat-installation.png" alt="Wind Turbine Installation on Boat">
             <img src="turbine-closeup.png" alt="Wind Turbine Close Up View">
@@ -128,29 +144,50 @@
         </div>
     </section>
 
-    <!-- Aeterna Fabric Section -->
-    <section id="aeterna-fabric">
-        <h2>Aeterna Fabric</h2>
-        <p>
-            Content coming soon...
-        </p>
-        <p>
-            Revolutionary material technology designed for durability, performance, and sustainability.
-        </p>
+    <section id="eternal-concrete">
+        <h2>Eternal-concrete</h2>
+        
+        <p><strong>(Derived from "Roma Aeterna"—Eternal Rome—and the material’s lightweight, high-performance foam structure.)</strong></p>
+
+        <h3>The Summary</h3>
+        <p>Eternal-concrete is a revolutionary, carbon-negative "Living Stone" designed to replace the entire traditional wall assembly with a single, structural pour. By marrying ancient Roman durability with 21st-century nanotechnology, this material provides a monolithic building solution that is as strong as rock, as light as wood, and more insulating than a vacuum-sealed panel.</p>
+
+        <h3>The "Super" Components:</h3>
+        <ul>
+            <li><strong>The Matrix:</strong> A Roman-inspired blend of volcanic ash, quicklime, and seawater that provides a 1,000-year lifespan and grows stronger in the presence of moisture.</li>
+            <li><strong>The Strength:</strong> An infused Graphene Web that provides the tensile strength of steel at the molecular level, allowing for a lightweight "foam" to support 2.5-story loads.</li>
+            <li><strong>The Insulation:</strong> A suspension of Aerogel-infused Coffee Biochar that locks heat in and cold out, achieving a passive-house U-value of 0.09 in a single 250mm pour.</li>
+            <li><strong>The Biological Engine:</strong> A "Living Core" of endolithic bacteria that self-heals micro-cracks and a "Velvet Skin" of external moss that regulates humidity and provides natural evaporative cooling.</li>
+        </ul>
+
+        <div class="pitch">
+            "Don't build a house. Grow a fortress."
+        </div>
+
+        <p>Eternal-concrete isn't just a construction material; it’s a regenerative ecosystem. It slashes labor costs by eliminating the need for separate insulation, studs, and cladding. It turns your home into a carbon sink that saves the planet while erasing your energy bills forever. With Eternal-concrete, your building doesn't decay over time—it matures, petrifying into a seamless, indestructible legacy.</p>
+
+        <h3>Key Specifications for Marketing:</h3>
+        <div class="specs-box">
+            <ul>
+                <li>U-Value: 0.09 W/m²K (Industry-leading).</li>
+                <li>Lifespan: 1,000+ years.</li>
+                <li>Install Speed: Single-pour monolithic structure (Reduces build time by 40%).</li>
+                <li>Footprint: Carbon-Negative (Sequestering coffee waste and CO2).</li>
+            </ul>
+        </div>
+
+        <!-- BUTTON TO TECHNICAL SHEET -->
+        <div class="tech-button">
+            <a href="technical-sheet.html" target="_blank">View Full Technical Sheet</a>
+        </div>
     </section>
 
-    <!-- Droplet Energy Section -->
     <section id="droplet-energy">
         <h2>Droplet Energy Harvesting</h2>
-        <p>
-            Content coming soon...
-        </p>
-        <p>
-            Innovative technology capturing clean energy from natural water sources.
-        </p>
+        <p>Content coming soon...</p>
+        <p>Innovative technology capturing clean energy from natural water sources.</p>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Green Energy Design. All rights reserved.</p>
     </footer>
